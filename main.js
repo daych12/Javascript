@@ -20,3 +20,7 @@ document.write(B)
 var Family = "The Arezzinis", Dad = "Dino", Mom = "Roxane",
     Daughter = "Penny", Son = "Zorro";
 document.write(Dad); 
+
+var blues = "I have the blues.";
+var blues = "blues.fontcolor("blue");
+document.write(blues);
