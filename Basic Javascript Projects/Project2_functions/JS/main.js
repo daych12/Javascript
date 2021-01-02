@@ -1,5 +1,5 @@
 var Family = "The Aychs", Dad = "Jeremiah", Mom = "Zane",
-    Daughter: "Jhene", Son="Sky";
+    Daughter= "Jhene", Son="Sky";
 document.write(Dad);
 
 function myFunction() {
