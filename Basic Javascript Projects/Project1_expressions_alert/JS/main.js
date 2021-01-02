@@ -22,8 +22,8 @@ var Family = "The Arezzinis", Dad = "Dino", Mom = "Roxane",
 document.write(Dad); 
 
 var blues = "I have the blues.";
-var blues = "blues.fontcolor("blue");
-document.write(blues);]
+var blues = blues.fontcolor("blue");
+document.write(blues);
 
 document.write(3 + 3);
 function My_First_Function() {      //Defining a function and naming it
@@ -35,4 +35,4 @@ function My_First_Function() {      //Defining a function and naming it
                                        //of result into the HTML element with "Green_Text" id
 }
 
-}
+
