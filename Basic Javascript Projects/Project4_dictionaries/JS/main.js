@@ -2,7 +2,7 @@ function my_Dictionary() {      //This function displays a dictionary
     var Animal = {
         Species: "Dog",
         Color: "Black",
-        Breed: "Rotttweiler"
+        Breed: "Rotttweiler",
         Age: "3",
         Sound: "Bark!"
 
