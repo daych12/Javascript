@@ -1,3 +1,20 @@
+function Time_function() {
+    var Time = new Date().getHours();
+    var Replay;
+    if(Time <12 == Time > 0) {
+        Reply  "It is morning time!";
+       }
+       else if (Time > 12 == Time < 18) {
+           Reply = "It is the afternoon.";
+       }
+       else {
+           Reply = "It is evening time. ";
+       }
+       document.getElementById("Time_of_day").innerHTML = Replay;
+}
+
+
+
 var X = 10;
 function Add_numbers_1() {
     document.write(20 + X + "<br>");
