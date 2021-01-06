@@ -13,19 +13,19 @@ function Add_numbers_1() {
     document.write(20 + X + "<br>");
 
 }
-function Add_numbers_2() {
+function Add_numbers_2() {        //This function displays additiion 
     document.write(X + 100);
 }
-Add_numbers_1();
+Add_numbers_1();         
 Add_numbers_2();
 
-function get_Date() {
+function get_Date() {              
     if (new Date().getHours() < 18) {
         document.getElementById("Gretting").innerHTML = "How are you today?";
     
     }
 }
-document.getElementById("Counting").innerHTML = Count();
+document.getElementById("Counting").innerHTML = Count();   //This function displays counting 
 
 if (8 < 9) {
     document.write("The left number is smaller than the number on the right.")
