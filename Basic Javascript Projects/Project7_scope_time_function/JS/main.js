@@ -1,8 +1,8 @@
 function Time_function() {
     var Time = new Date().getHours();
-    var Replay;
+    var Reply;
     if(Time <12 == Time > 0) {
-        Reply  "It is morning time!";
+        Reply ="It is morning time!";
        }
        else if (Time > 12 == Time < 18) {
            Reply = "It is the afternoon.";
@@ -10,7 +10,7 @@ function Time_function() {
        else {
            Reply = "It is evening time. ";
        }
-       document.getElementById("Time_of_day").innerHTML = Replay;
+       document.getElementById("Time_of_day").innerHTML = Reply;
 }
 
 
@@ -42,7 +42,7 @@ function get_Date() {
     
     }
 }
-document.getElementById("Counting").innerHTML = Count();   //This function displays counting 
+
 
 if (8 < 9) {
     document.write("The left number is smaller than the number on the right.")

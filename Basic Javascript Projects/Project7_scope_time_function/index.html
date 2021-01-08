@@ -8,10 +8,13 @@
     <p id="Time_of_day"></p>
     <button onclick="Time_function()">Click here to get the time.</button>
     <button onclick="get_Date()">The time is?</button>
+    <p id="Gretting"></p>
     <script>
         function get_Date() {
-    if (new Date().getHours() < 18) {
-        document.getElementById("Gretting").innerHTML = "How are you today?";
+            if (new Date().getHours() < 18) {
+                document.getElementById("Gretting").innerHTML = "How are you today?";
+            }
+        }
     </script>
 </body>
 </html>
