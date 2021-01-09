@@ -20,6 +20,24 @@
 <input id="Food_Input" type="text">
 <button onclick="Food_Function()">Submit Food</button>
 <p id="Output"></p>
-<body>
+<h1 class="Click">This text will change!</h1>
+<h3 class="Click">This text will not change.</h3>
+<button onclick="Hello_World_Function()">Click me!</button>
+
+<canvas id="ID_Name" width="500" height="250"></canvas>
+<canvas id="ID_Name" width="500" height="250" style="border:5px solid black;">
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        // Create gradient
+        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+        
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 150, 80);
+        </script>
 </body>
 </html>
