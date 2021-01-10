@@ -159,9 +159,9 @@ x = x1,
 //This variable stores temporary y axis data we update in our animation loop.
 y = y1;
 //This function interacts with the canvas
-function animateLineDrawing() {
+function animationLineDrawing() {
     //This variable creates the loop for when the game ends it restarts.
-    const animationLoop = requestAnimationFrame(animateLineDrawing);
+    const animationLoop = requestAnimationFrame(animationLineDrawing);
     //This method clears content from last loop iteration.
     c.clearRect(0, 0, 608, 608);
     //This method starts a new path
@@ -217,7 +217,7 @@ function animateLineDrawing() {
         //This for loop iterates through each HTML square element
         for (let i = 0; i < 9; i++) {
             //This variable gets the html element of i.
-            let square = document.getElementsById(String(i));
+            let square = document.getElementById(String(i));
             //This removes our elements backgroundImage.
             square.style.backgroundImage = '';
         }
