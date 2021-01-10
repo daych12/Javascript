@@ -69,11 +69,11 @@ function Handle_Operator(Next_Operator) {
 }
 
 const Perform_Calculation = {
-    ' / ': (First_Operand, Wait_Second_Operand) => First_Operand / Second_Operand,
-    ' * ': (First_Operand, Wait_Second_Operand) => First_Operand / Second_Operand,
-    ' + ': (First_Operand, Wait_Second_Operand) => First_Operand / Second_Operand,
-    ' - ': (First_Operand, Wait_Second_Operand) => First_Operand / Second_Operand,
-    ' = ': (First_Operand, Wait_Second_Operand) => Second_Operand
+    '/': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
+    '*': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
+    '+': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
+    '-': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
+    '=': (First_Operand, Second_Operand) => Second_Operand
 };
 
 function Calculator_Reset() {
@@ -99,7 +99,7 @@ keys.addEventListener('click', (event) => {
    if (!target.matches('button')) {
        return;
    }
-   
+
     if (target.classList.contains('operator')) {
         Handle_Operator(target.value) ;
         Update_Display();

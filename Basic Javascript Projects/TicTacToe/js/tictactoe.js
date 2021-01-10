@@ -159,7 +159,7 @@ x = x1,
 //This variable stores temporary y axis data we update in our animation loop.
 y = y1;
 //This function interacts with the canvas
-function animateLineDrawing() [
+function animateLineDrawing() {
     //This variable creates the loop for when the game ends it restarts.
     const animationLoop = requestAnimationFrame(animateLineDrawing);
     //This method clears content from last loop iteration.
@@ -187,10 +187,10 @@ function animateLineDrawing() [
     }
     //This condition is similar to the one above.
     //It was necessary for the 6, 4, 2 win condition.
-    if(x1 <= x= x2 && y1 >= y2) {
+    if(x1 <= x2 && y1 >= y2) {
         if (x < x2) { x += 10; }
         if (y > y2) { y -= 10;}
-        if (x >= x2 && y <== y2) { cancelAnimationFrame(animationLoop);}
+        if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop);}
     }
 }
     //This funtion clears our canvas after our win line is drawn.
