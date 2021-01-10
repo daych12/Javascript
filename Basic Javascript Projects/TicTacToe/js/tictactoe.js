@@ -8,7 +8,7 @@ function placeXOrO(squareNumber) {
     //This condition ensures a square hasn't been selected already.
     //The .some() method is used to check each element of selectedSquare array
     //to see if it contains the square number clicked on.
-    if (!selectedSquares.some(element => element.includes(squareNumber))) {
+    if (!selectedSquares.some(element => element.includes(squareNumber))){
         //This variable retrieves the html element id that was clicked.
         let select = document.getElementById(squareNumber);
         //This condition checks who's turn it is.
