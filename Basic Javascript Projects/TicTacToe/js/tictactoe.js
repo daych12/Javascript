@@ -18,7 +18,7 @@ function placeXOrO(squareNumber) {
             //Active player may only be 'X' or 'O' so, if not 'X' it must be 'O'
         } else {
             //If activePlayer is equal to 'O' , the o.png is placed in HTML.
-            select.style.backgroundImage = 'url("images/oo.png")';
+            select.style.backgroundImage = 'url("download.jfif")';
         }
          //squareNumber and activePlayer are concatenated together and added to array.
          selectSquares.push(squareNumber + activePlayer);
@@ -35,7 +35,7 @@ function placeXOrO(squareNumber) {
          }
 
             //This function plays placement sound.
-            Audio('./media/horn.mp3');
+            audio('./media/horn.mp3');
             //This condition checks to see if it is computers turn.
             if(activePlayer === 'O') {
                 //This function disables clicking for computer choice.
