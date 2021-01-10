@@ -8,7 +8,7 @@ function placeXOrO(squareNumber) {
     //This condition ensures a square hasn't been selected already.
     //The .some() method is used to check each element of selectedSquare array
     //to see if it contains the square number clicked on.
-    if (!selectedSquares.some(element => element.includes(squareNumber))){
+    if (!selectSquares.some(element => element.includes(squareNumber))){
         //This variable retrieves the html element id that was clicked.
         let select = document.getElementById(squareNumber);
         //This condition checks who's turn it is.
@@ -105,7 +105,7 @@ function checkWinConditions() {
     else if (arrayIncludes('0O', '4O' , '8O')) { drawWinLine(100, 100, 520, 520); }
     // This condition checks for tie. If none of the above conditions register
     //and 9 squares are selected, the code executes.
-    else if (selectedSquares.length >= 9) {
+    else if (selectSquares.length >= 9) {
         //This function plays the tie game sound.
         Audio('./media/tie.mp3');
         //This function sets a .3 second timer before the resetGame is called.
@@ -115,12 +115,12 @@ function checkWinConditions() {
     //It is used to check for each win condition.
     function arrayIncludes(squareA, squareB, squareC){
         //The next 3 variables will be used to check for 3 in a row. 
-        const a = selectedSquares.includes(squareA);
-        const b = selectedSquares.includes(squareB);
-        const c = selectedSquares.includes(squareC);
+        const a = selectSquares.includes(squareA);
+        const b = selectSquares.includes(squareB);
+        const c = selectSquares.includes(squareC);
         //If the 3 variables we pass are all included in our array true is
         //returned and our else if condition executes the drawWinLine function.
-        if (a === true && b === true && C === true) { return true; }
+        if (a === true && b === true && c === true) { return true; }
 
     }
 }
@@ -222,5 +222,5 @@ function animateLineDrawing() {
             square.style.backgroundImage = '';
         }
         //This resets our array so it is empty and we can start over.
-        selectedSquares = [];
+        selectSquares = [];
     }
