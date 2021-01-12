@@ -26,9 +26,9 @@ function getReceipt() {
     sizeTotal = 16;
 }
 runningTotal = sizeTotal;
-console.log(selectedSize+"= $"sizeTotal+" .00";
+console.log(selectedSize+"= $"+sizeTotal+" .00";
 console.log("size text1: "+text1);
-console.log("subtotal: $+runningTotal+".00);
+console.log("subtotal: $"+runningTotal+".00");
 //these variables will get passed on to each function
 getTopping(runningTotal, text1);
 
