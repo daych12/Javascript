@@ -26,7 +26,7 @@ function getReceipt() {
     sizeTotal = 16;
 }
 runningTotal = sizeTotal;
-console.log(selectedSize+"= $"+sizeTotal+" .00";
+console.log(selectedSize+"= $"+sizeTotal+" .00");
 console.log("size text1: "+text1);
 console.log("subtotal: $"+runningTotal+".00");
 //these variables will get passed on to each function
@@ -44,18 +44,18 @@ function getTopping(runningTotal,text1) {
             text1 = text1+toppingArray[j].value+"<br>";
         }
     }
-    var toppingCount = slectedTopping.length;
+    var toppingCount = selectedTopping.length;
     if (toppingCount > 1) {
         toppingTotal = (toppingCount - 1); 
     } else {
         toppingTotal = 0;
     }
     runningTotal = (runningTotal + toppingTotal);
-    console.log("total slected topping items: "+toppingCount);
+    console.log("total selected topping items: "+toppingCount);
     console.log(toppingCount+" topping - 1 free topping = "+"$"+toppingTotal+.00);
     console.log("topping text1: "+text1);
     console.log("Purchase Total: "+"$"+runningTotal+".00") ;
-    document.getElementsById("showText").innerHTML=text1;
-    document.getElementsById("totalPrice").innerHTML = "<h3>Total: <strong>$"+
-        runnningTotal+".00"+"</strong></h3>";
+    document.getElementById("showText").innerHTML=text1;
+    document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+
+        runningTotal+".00"+"</strong></h3>";
 };
