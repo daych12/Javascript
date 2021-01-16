@@ -69,10 +69,10 @@ function Handle_Operator(Next_Operator) {
 }
 
 const Perform_Calculation = {
-    '/': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
+    '/': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
     '*': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
-    '+': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
-    '-': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
+    '+': (First_Operand, Second_Operand) => First_Operand + Second_Operand,
+    '-': (First_Operand, Second_Operand) => First_Operand - Second_Operand,
     '=': (First_Operand, Second_Operand) => Second_Operand
 };
 
