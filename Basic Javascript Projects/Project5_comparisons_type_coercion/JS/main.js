@@ -1,7 +1,4 @@
-function negation_Operator() {
-    var X = 10;
-    document.getElementById("Math").innerHTML = -x;
-}
+
 X = 10;
 document.write(typeof X);
 document.write(10 > 2 );
