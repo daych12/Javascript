@@ -15,13 +15,13 @@ div {
         font-family: Monospace;
 }
 #menuBG {
-    width:400px;
+    width:600px; /*this will allow you to fit the meats menu on the same row as the other two menu lists. i.e., 200px for each of the 3 menu lists = 600px*/
     height:470px;
     margin:10px auto;
 }
 
 #frmMenu {
-    width: 400px;
+    width: 600px; /*this will account for the additional menu width of 200px */
     height:200px;
 }
 
@@ -63,7 +63,9 @@ div {
     height:200px;
 }
 #btnOrder {
-    margin:10px 0px 0px 100px;
+    /* margin:10px 0px 0px 100px; */
+    margin: 0 auto; /*this will center your button in the <div>*/
+    display: block;
     width:100px;
     height:40px;
 }
