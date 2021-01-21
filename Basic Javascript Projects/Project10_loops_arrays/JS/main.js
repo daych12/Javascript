@@ -17,10 +17,10 @@ function for_Loop() {
     document.getElementById("List_of_Instruments").innerHTML = Content;
 }
 var cars = ["Saab", "Volvo", "BMW"];
-document.getElementById().innerHTML
-}
+document.getElementById("Array").innerHTML = "this string is using the get element to target array";
+
 function constant_function() {
-    const New_Shoes = {type:"Air Max", brand:"Nikes", color="White"};
+    const New_Shoes = {type:"Air Max", brand:"Nikes", color:"White"};
     New_Shoes.color="white";
     New_Shoes.price = "$180";
     document.getElementById("Constant").innerHTML = "The cost of the" +
@@ -28,21 +28,12 @@ function constant_function() {
 }
 var X = 82;
 document.write(X);
-{
-}for (i = 0; i < 10; i++) {
-    if (i === 3) { break; }
-    text += "The number is " + i + "<br>";
-  }
-    let X = 33;
+
+    let D = 25;
     document.write("<br" + X);
-}
+
 document.write("<br>" + X);
-}
-for (i = 0; i < 10; i++) {
-    if (i === 3) { continue; }
-    text += "The number is " + i + "<br>";
-  }
-}
+
 let car = {
     make: "Dodge ",
     model: "Challenger ",
@@ -53,4 +44,4 @@ let car = {
     }
 } ;
 document.getElementById("Car_Object").innerHTML = car.description();
-}
+
