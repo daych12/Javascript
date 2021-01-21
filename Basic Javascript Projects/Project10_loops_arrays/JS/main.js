@@ -29,10 +29,19 @@ function constant_function() {
 var X = 82;
 document.write(X);
 {
+}for (i = 0; i < 10; i++) {
+    if (i === 3) { break; }
+    text += "The number is " + i + "<br>";
+  }
     let X = 33;
     document.write("<br" + X);
 }
 document.write("<br>" + X);
+}
+for (i = 0; i < 10; i++) {
+    if (i === 3) { continue; }
+    text += "The number is " + i + "<br>";
+  }
 }
 let car = {
     make: "Dodge ",
