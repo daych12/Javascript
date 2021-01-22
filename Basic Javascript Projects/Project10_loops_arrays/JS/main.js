@@ -8,7 +8,7 @@ function count_To_Ten() {
         document.getElementById("Counting_to_Ten").innerHTML = Digit;
 }
 var Instruments = ["Guitar", "Drums", "Piano", "Bass", "Violin", "Trumpet", "Flute"];
-var content = "";
+var Content = "";
 var Y;
 function for_Loop() {
     for (Y = 0; Y < Instruments.length; Y++) {
